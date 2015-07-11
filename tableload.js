@@ -210,7 +210,7 @@ function init(params) {
       d = currentData[i];
       var newRow = document.createElement("tr");
       newRow.classList.add("record");
-      ["title", "date", "coverage", "subject", "link"].forEach(function(k) {
+      ["title", "date", "coverage", "subject", "source", "link"].forEach(function(k) {
         var newCell = document.createElement("td");
         if (k !== "link") {
           if (k === "date") {
