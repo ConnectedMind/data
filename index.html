@@ -36,7 +36,7 @@
       <label for "subject">주제:</label><select id="subject"><option value=0>all</option></select>
       </div>
 
-    	<div class="col-md-3">
+    	<div class="col-md-2">
 
       <label for "coverage">범위:</label><select id="coverage"><option value=0>all</option></select>
       </div>
@@ -56,15 +56,21 @@
      <div class="row">
      <table id="files" class="table table-responsive">
      <tr>
-      <th class="title col-md-2">제목</th>
+      <th class="title col-md-3">제목</th>
       <th class="date col-md-2">일자</th>
       <th class="coverage col-md-2">범위</th>
-      <th class="subject col-md-2">주제</th>
+      <th class="subject col-md-3">주제</th>
       <th class="link col-md-2">link</th>
      </tr>
      </table>
      </div>
-     
+     <div class="row">
+     <button type="button" id="prev" class="btn btn-default btn-xs" style="margin-right: 10px;">previous</button>
+     Page <span id="currentPage">1</span> of <span id="totalPages">n</span>
+     <button  type="button"  id="next" class="btn btn-default btn-xs"style="margin-right: 20px;margin-left: 10px;">next</button>
+     Go to page: <input type="text" id="page" style="width: 30px; margin-left: 5px;" />
+     <button  type="button" id="go" class="btn btn-default btn-xs" style="margin-left: 20px;">go</button>
+     </div>
     </section>
     <script src="tableload.js"></script>
     <script type="text/javascript">
