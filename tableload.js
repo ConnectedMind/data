@@ -209,6 +209,7 @@ function init(params) {
     for(i = page * pagination; i < Math.min((page + 1) * pagination, currentData.length); i++) {
       d = currentData[i];
       var newRow = document.createElement("tr");
+#열 제목 입력
       newRow.classList.add("record");
       ["title", "date", "coverage", "subject", "source", "type", "link"].forEach(function(k) {
         var newCell = document.createElement("td");
